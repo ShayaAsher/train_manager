@@ -9,8 +9,9 @@ def save_data(data):
     with open("data.json", "w") as write_file:
         json.dump(data, write_file)
 
-# data = load_data()
 
-# data["name"] = "Bob"
-
-# save_data(data)
+def modify_data(data, **kwarg):
+    for key, value in kwarg.items():
+        if key in data.keys():
+            data[key] = value
+        
