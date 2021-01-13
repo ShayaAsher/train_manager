@@ -15,3 +15,5 @@ def modify_data(data, **kwarg):
         if key in data.keys():
             data[key] = value
         
+
+def calculate(data):
